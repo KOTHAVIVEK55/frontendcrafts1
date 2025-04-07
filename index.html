@@ -1,96 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHA5E - Digital Experience Agency</title>
+    <link rel="stylesheet" href="finalstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-outline"></div>
+    </div>
+
+    <!-- Background PHA5E text -->
+    <div class="background-text">
+        <div class="marquee">PHA5E PHA5E PHA5E PHA5E PHA5E PHA5E PHA5E</div>
+        <div class="marquee-reverse">PHA5E PHA5E PHA5E PHA5E PHA5E PHA5E PHA5E</div>
+    </div>
+
+    <!-- Floating background elements -->
+    <div class="floating-background"></div>
+
+    <!-- Mouse trail -->
+    <div class="mouse-trail"></div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+                <span class="logo-green">PHA</span><span class="logo-white">5E</span>
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#vision" class="nav-link">Our vision</a></li>
+                    <li><a href="#team" class="nav-link">Our team</a></li>
+                    <li><a href="#projects" class="nav-link">Our projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="overlay"></div>
+            <img src="images/hero-bg.jpg" alt="Background" class="hero-image">
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-title-green" data-text="PHA">PHA</span><span class="hero-title-white" data-text="5E">5E</span>
+                    <div class="circle-decoration circle-1"></div>
+                    <div class="circle-decoration circle-2"></div>
+                </h1>
+                <p class="hero-subtitle">
+                    Transforming ideas into digital experiences that captivate and inspire.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-index="0">
+                    <div class="service-image-container">
+                        <img src="https://cdn.openart.ai/uploads/image__GTFJXMt_1743830248231_512.webp" alt="Design" class="service-image">
+                        <div class="service-outline"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Design</h3>
+                        <p class="service-description">Crafting visual experiences that captivate and inspire</p>
+                    </div>
+                </div>
+
+                <div class="service-card" data-index="1">
+                    <div class="service-image-container">
+                        <img src="https://www.appstudio.ca/blog/wp-content/uploads/2020/09/Modern-Software-Development.jpg" alt="Development" class="service-image">
+                        <div class="service-outline"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Development</h3>
+                        <p class="service-description">Building digital solutions with precision and innovation</p>
+                    </div>
+                </div>
+
+                <div class="service-card" data-index="2">
+                    <div class="service-image-container">
+                        <img src="https://cdn.leonardo.ai/users/56ad483c-e17f-4f4f-a125-8958ce48aba8/generations/2883b1db-a0c8-4460-bcaa-b4e6c435ed23/segments/1:4:1/Flux_Dev_Highresolution_intricately_detailed_digital_illustrat_0.jpg" alt="Strategy" class="service-image">
+                        <div class="service-outline"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Strategy</h3>
+                        <p class="service-description">Planning for success in an ever-evolving digital landscape</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chevron-down">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="vision-section">
+        <div class="container">
+            <div class="vision-grid">
+                <div class="vision-content">
+                    <div class="circle-decoration large-circle"></div>
+                    <h2 class="section-title">
+                        <span class="title-green">Our</span> Vision
+                    </h2>
+                    <div class="title-underline"></div>
+                    <p class="vision-text">
+                        Living an immersive journey rich in emotions adds flesh and bones and meaning to a digital experience
+                        that is all too often cold. Not only does this process perfectly embody the core values of the brand,
+                        but the message delivered has a longer, deeper and more positive influence on the user.
+                    </p>
+                    <p class="vision-text">
+                        The bringing together of digital creativity and knowledge in neuroscience has written into the DNA of
+                        our studio an artisanal know-how at the service of high technology. Each project is imagined and
+                        produced on a tailor-made basis, with listening, precision, rigour, originality and pleasure.
+                    </p>
+                    <a href="#" class="text-link">
+                        <span>See more</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-right">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="vision-image-container">
+                    <img src="https://img.freepik.com/free-photo/light-bulb-with-drawing-graph_1232-2105.jpg?uid=R132080460&ga=GA1.1.524226044.1728369146&semt=ais_hybrid&w=740" alt="Our Vision" class="vision-image">
+                    <div class="vision-image-overlay"></div>
+                    <div class="vision-quote">
+                        <h3>THE MORE AN EXPERIENCE IS RICH IN MEANING, THE MORE ITS MEANING IS RICH.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-content">
+                <h2 class="section-title centered">
+                    <span class="title-green">Trust</span> Our Expertise
+                </h2>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-decoration"></div>
+                        <h3 class="stat-number">10+</h3>
+                        <p class="stat-label">Years Experience</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-decoration"></div>
+                        <h3 class="stat-number">150+</h3>
+                        <p class="stat-label">Projects Completed</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-decoration"></div>
+                        <h3 class="stat-number">98%</h3>
+                        <p class="stat-label">Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <h2 class="section-title centered">
+                <span class="title-green">Our</span> Process
+            </h2>
+            <div class="title-underline centered"></div>
+            <p class="section-subtitle centered">
+                Watch how we transform ideas into exceptional digital experiences
+            </p>
+
+            <div class="video-container">
+                <iframe 
+                    width="100%" 
+                    height="100%" 
+                    src="https://www.youtube.com/embed/a-QfJRSMT_4" 
+                    title="PHA5E Process" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Projects Preview -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="projects-header">
+                <h2 class="section-title centered">
+                    <span class="title-green">Featured</span> Projects
+                </h2>
+                <div class="title-underline centered"></div>
+                <p class="section-subtitle centered">
+                    Explore our latest work and see how we bring ideas to life through innovative design and cutting-edge
+                    technology.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="https://cdn.leonardo.ai/users/56ad483c-e17f-4f4f-a125-8958ce48aba8/generations/b0c3ebcb-3c88-4c3a-a310-19114c9d4977/segments/1:4:1/Flux_Dev_A_futuristic_highdefinition_digital_design_featuring__0.jpg" alt="Immersive Brand Experience" class="project-image">
+                        <div class="project-overlay"></div>
+                        <div class="project-info">
+                            <span class="project-category">Digital Design</span>
+                            <h3 class="project-title">Immersive Brand Experience</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="https://cdn.leonardo.ai/users/56ad483c-e17f-4f4f-a125-8958ce48aba8/generations/c9e70562-9d26-42c8-9747-9c477eb8c577/segments/1:4:1/Flux_Dev_A_futuristic_and_dynamic_interactive_installation_sho_0.jpg" alt="Interactive Installation" class="project-image">
+                        <div class="project-overlay"></div>
+                        <div class="project-info">
+                            <span class="project-category">Physical Computing</span>
+                            <h3 class="project-title">Interactive Installation</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-cta">
+                <a href="#" class="button-outline">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <h2 class="section-title centered">
+                <span class="title-green">Our</span> Team
+            </h2>
+            <div class="title-underline centered"></div>
+            <p class="section-subtitle centered">
+                Meet the talented individuals who bring creativity, expertise, and passion to every project
+            </p>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image-container">
+                        <img src="https://img.freepik.com/premium-vector/profile-picture-icon-human-symbol-man-women-sign-people-person-user-profile-avatar-icon_659151-3884.jpg?w=900" alt="Team Member" class="member-image">
+                    </div>
+                    <h3 class="member-name">KOTHA VIVEK</h3>
+                    <p class="member-role">Creative Director</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image-container">
+                        <img src="https://img.freepik.com/premium-vector/profile-picture-icon-human-symbol-man-women-sign-people-person-user-profile-avatar-icon_659151-3884.jpg?w=900" alt="Team Member" class="member-image">
+                    </div>
+                    <h3 class="member-name">KOTHA SATHWIK</h3>
+                    <p class="member-role">Technical Lead</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image-container">
+                        <img src="https://img.freepik.com/premium-vector/profile-picture-icon-human-symbol-man-women-sign-people-person-user-profile-avatar-icon_659151-3884.jpg?w=900" alt="Team Member" class="member-image">
+                    </div>
+                    <h3 class="member-name">KOTHA RAJU</h3>
+                    <p class="member-role">UX Strategist</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image-container">
+                        <img src="https://img.freepik.com/premium-vector/profile-picture-icon-human-symbol-man-women-sign-people-person-user-profile-avatar-icon_659151-3884.jpg?w=900" alt="Team Member" class="member-image">
+                    </div>
+                    <h3 class="member-name">KOTHA VINODA</h3>
+                    <p class="member-role">Project Manager</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title centered">
+                <span class="title-green">Contact</span> Us
+            </h2>
+            <div class="title-underline centered"></div>
+            <p class="section-subtitle centered">
+                Have a project in mind? Let's create something amazing together
+            </p>
+
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <h3 class="contact-subtitle">Send us a message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">
+                            <span>Send Message</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="send-icon">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <div class="success-icon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="success-icon">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </div>
+                        <h3 class="success-title">Message Sent!</h3>
+                        <p class="success-message">Thank you for reaching out. We'll get back to you as soon as possible.</p>
+                        <button class="button-outline" id="sendAnother">Send Another Message</button>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">Contact Information</h3>
+                    <div class="info-item">
+                        <div class="info-icon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="info-icon">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="info-title">Our Locations</h4>
+                            <p class="info-text">
+                                JUBLI HILLS<br>
+                                 HYDERABAD
+                            </p>
+                            <p class="info-text">
+                                LAL BAZAR STREET CORNER<br>
+                                75010 HYDERABAD
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="info-icon">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="info-title">Email</h4>
+                            <a href="mailto:contact@phase.com" class="info-link">contact@phase.com</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="info-icon">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="info-title">Phone</h4>
+                            <a href="tel:+33488809424" class="info-link">+33 4 88 80 94 24</a>
+                        </div>
+                    </div>
+
+                    <div class="working-hours">
+                        <h4 class="info-title">Working Hours</h4>
+                        <ul class="hours-list">
+                            <li><span>Monday - Friday</span><span>9:00 AM - 6:00 PM</span></li>
+                            <li><span>Saturday</span><span>By appointment</span></li>
+                            <li><span>Sunday</span><span>Closed</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h2 class="footer-logo">
+                        <span class="logo-green">PHA</span><span class="logo-white">5E</span>
+                    </h2>
+                    <p class="footer-description">
+                        Transforming ideas into digital experiences that captivate and inspire.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="mailto:contact@phase.com" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-locations">
+                    <h3 class="footer-heading">Locations</h3>
+                    <div class="footer-location-info">
+                        <p>
+                            LAL BAZAR STREET CORNER<br>
+                                
+                        </p>
+                        <p>
+                            75010 HYDERABAD
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 class="footer-heading">Contact</h3>
+                    <a href="mailto:contact@phase.com" class="footer-contact-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        contact@phase.com
+                    </a>
+                    <a href="tel:+33488809424" class="footer-contact-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        +33 4 88 80 94 24
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© <span id="currentYear"></span> PHA5E. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="finalscript.js"></script>
+</body>
 </html>
+
